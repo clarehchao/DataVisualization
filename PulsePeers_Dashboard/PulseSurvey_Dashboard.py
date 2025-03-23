@@ -12,8 +12,7 @@ app = Dash(__name__,
 # Define the navigation bar
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink(page["name"], href=page["path"]))
-        for page in page_registry.values()
+        dbc.NavItem(dbc.NavLink(page["name"], href=page["path"])) for page in page_registry.values()
     ],
     brand="Pulse Survey Dashboard",
     brand_href="/",
